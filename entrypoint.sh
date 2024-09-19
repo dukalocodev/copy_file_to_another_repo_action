@@ -47,6 +47,9 @@ fi
 
 cd "$CLONE_DIR"
 
+echo "Removing .git folder"
+rm -rf .git
+
 if [ ! -z "$INPUT_DESTINATION_BRANCH_CREATE" ]
 then
   echo "Creating new branch: ${INPUT_DESTINATION_BRANCH_CREATE}"
