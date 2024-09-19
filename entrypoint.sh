@@ -9,6 +9,9 @@ then
   return 1
 fi
 
+echo "Removing .git folder"
+rm -rf .git
+
 if [ -z "$INPUT_GIT_SERVER" ]
 then
   INPUT_GIT_SERVER="github.com"
@@ -46,9 +49,6 @@ else
 fi
 
 cd "$CLONE_DIR"
-
-echo "Removing .git folder"
-rm -rf .git
 
 if [ ! -z "$INPUT_DESTINATION_BRANCH_CREATE" ]
 then
