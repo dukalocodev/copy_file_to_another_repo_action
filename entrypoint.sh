@@ -12,6 +12,9 @@ fi
 echo "Removing .git folder"
 rm -rf .git
 
+echo "Removing .github folder"
+rm -rf .github
+
 if [ -z "$INPUT_GIT_SERVER" ]
 then
   INPUT_GIT_SERVER="github.com"
